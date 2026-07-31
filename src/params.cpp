@@ -121,25 +121,17 @@ u64 find_ntt_prime(std::size_t n, unsigned log_q, int rounds, rng& source) {
 params generate_params(std::size_t n, unsigned log_q, u64 t, rng& source) {
     if (!is_power_of_two(n)) throw std::invalid_argument("generate_params: n must be a power of two");
 
+    const u64 q = find_ntt_prime(n, log_q, prime_test_rounds, source);
+    const auto [found, root] = find_primitive_root(2 * n, q, source);
+    if (!found) throw std::runtime_error("generate_params: no primitive 2n-th root found modulo q");
+
     params result;
     result.n = n;
     result.t = t;
-
-    u64 candidate = (u64(1) << log_q) + 1;
-    for (int attempt = 0; attempt < 64; ++attempt) {
-        const u64 q = find_ntt_prime(n, log_q, prime_test_rounds, source);
-        if (q >= candidate) break;
-        candidate = q;
-
-        const auto [found, root] = find_primitive_root(2 * n, q, source);
-        if (!found) continue;
-
-        result.q = q;
-        result.root = root;
-        result.validate();
-        return result;
-    }
-    throw std::runtime_error("generate_params: no usable modulus and root pair found");
+    result.q = q;
+    result.root = root;
+    result.validate();
+    return result;
 }
 
 namespace presets {
