@@ -4,6 +4,7 @@
 #include "bfv/poly.hpp"
 
 #include <stdexcept>
+#include <string>
 #include <vector>
 
 namespace bfv {

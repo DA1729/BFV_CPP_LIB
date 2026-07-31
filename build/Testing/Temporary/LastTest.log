@@ -1,10 +1,10 @@
-Start testing: Jul 31 13:59 CEST
+Start testing: Jul 31 14:04 CEST
 ----------------------------------------------------------
 1/5 Testing: test_mod_arith
 1/5 Test: test_mod_arith
 Command: "/home/vincent/Projects/BFV_CPP_LIB/build/tests/test_mod_arith"
 Directory: /home/vincent/Projects/BFV_CPP_LIB/build/tests
-"test_mod_arith" start time: Jul 31 13:59 CEST
+"test_mod_arith" start time: Jul 31 14:04 CEST
 Output:
 ----------------------------------------------------------
 mod_arith: ok
@@ -12,7 +12,7 @@ mod_arith: ok
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_mod_arith" end time: Jul 31 13:59 CEST
+"test_mod_arith" end time: Jul 31 14:04 CEST
 "test_mod_arith" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -20,7 +20,7 @@ Test Passed.
 2/5 Test: test_poly
 Command: "/home/vincent/Projects/BFV_CPP_LIB/build/tests/test_poly"
 Directory: /home/vincent/Projects/BFV_CPP_LIB/build/tests
-"test_poly" start time: Jul 31 13:59 CEST
+"test_poly" start time: Jul 31 14:04 CEST
 Output:
 ----------------------------------------------------------
 poly: ok
@@ -28,7 +28,7 @@ poly: ok
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"test_poly" end time: Jul 31 13:59 CEST
+"test_poly" end time: Jul 31 14:04 CEST
 "test_poly" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -36,7 +36,7 @@ Test Passed.
 3/5 Test: test_params
 Command: "/home/vincent/Projects/BFV_CPP_LIB/build/tests/test_params"
 Directory: /home/vincent/Projects/BFV_CPP_LIB/build/tests
-"test_params" start time: Jul 31 13:59 CEST
+"test_params" start time: Jul 31 14:04 CEST
 Output:
 ----------------------------------------------------------
 params: ok
@@ -44,7 +44,7 @@ params: ok
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_params" end time: Jul 31 13:59 CEST
+"test_params" end time: Jul 31 14:04 CEST
 "test_params" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -52,7 +52,7 @@ Test Passed.
 4/5 Test: test_encoder
 Command: "/home/vincent/Projects/BFV_CPP_LIB/build/tests/test_encoder"
 Directory: /home/vincent/Projects/BFV_CPP_LIB/build/tests
-"test_encoder" start time: Jul 31 13:59 CEST
+"test_encoder" start time: Jul 31 14:04 CEST
 Output:
 ----------------------------------------------------------
 encoder: ok
@@ -60,7 +60,7 @@ encoder: ok
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_encoder" end time: Jul 31 13:59 CEST
+"test_encoder" end time: Jul 31 14:04 CEST
 "test_encoder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -68,7 +68,7 @@ Test Passed.
 5/5 Test: test_scheme
 Command: "/home/vincent/Projects/BFV_CPP_LIB/build/tests/test_scheme"
 Directory: /home/vincent/Projects/BFV_CPP_LIB/build/tests
-"test_scheme" start time: Jul 31 13:59 CEST
+"test_scheme" start time: Jul 31 14:04 CEST
 Output:
 ----------------------------------------------------------
 scheme: ok
@@ -76,8 +76,8 @@ scheme: ok
 Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"test_scheme" end time: Jul 31 13:59 CEST
+"test_scheme" end time: Jul 31 14:04 CEST
 "test_scheme" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 31 13:59 CEST
+End testing: Jul 31 14:04 CEST

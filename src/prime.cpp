@@ -57,7 +57,7 @@ u64 generate_prime(unsigned bits, int rounds, rng& source) {
     if (bits < 2 || bits > 62) throw std::invalid_argument("generate_prime: bits must be in [2, 62]");
 
     const u64 low = u64(1) << (bits - 1);
-    const u64 high = (bits == 64) ? ~u64(0) : (u64(1) << bits) - 1;
+    const u64 high = (u64(1) << bits) - 1;
 
     for (int attempt = 0; attempt < 10000; ++attempt) {
         const u64 candidate = low + source.uniform(high - low + 1);

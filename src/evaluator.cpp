@@ -1,6 +1,7 @@
 #include "bfv/evaluator.hpp"
 
 #include <stdexcept>
+#include <string>
 
 namespace bfv {
 
@@ -22,9 +23,13 @@ poly lift_plaintext(const context& ctx, const plaintext& m) {
     return result;
 }
 
+// delta * m, matching what encryptor uses, so add_plain leaves a ciphertext
+// with the same noise as a fresh encryption of the sum
 poly scaled_plaintext(const context& ctx, const plaintext& m) {
-    poly result = lift_plaintext(ctx, m);
-    for (std::size_t i = 0; i < result.size(); ++i) result[i] = mul_mod(result[i], ctx.delta(), ctx.q());
+    if (m.size() != ctx.degree()) throw std::invalid_argument("evaluator: plaintext has the wrong length");
+
+    poly result = ctx.ring().zero();
+    for (std::size_t i = 0; i < m.size(); ++i) result[i] = mul_mod(m[i] % ctx.t(), ctx.delta(), ctx.q());
     return result;
 }
 
