@@ -21,7 +21,8 @@ int main() {
         check_eq(log2_floor(generated.q) + 1, 25u);
         check_eq(generated.t, u64(256));
         generated.validate();
-        context(generated);
+        const context usable(generated);
+        check_eq(usable.degree(), std::size_t(512));
     }
 
     // rejected parameter sets

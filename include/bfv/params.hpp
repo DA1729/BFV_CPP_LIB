@@ -26,10 +26,12 @@ struct ntt_tables {
     static ntt_tables build(std::size_t n, u64 q, u64 root);
 };
 
+// Defaults match presets::n2048_logq37(), the smallest supplied set with
+// enough noise budget for a homomorphic multiplication.
 struct params {
-    std::size_t n = 1024;    // ring degree, a power of two
-    u64 q = 132120577;       // ciphertext modulus, prime with 2n | q - 1
-    u64 root = 73993;        // primitive 2n-th root of unity modulo q
+    std::size_t n = 2048;    // ring degree, a power of two
+    u64 q = 137438822401;    // ciphertext modulus, prime with 2n | q - 1
+    u64 root = 35158654494;  // primitive 2n-th root of unity modulo q
     u64 t = 16;              // plaintext modulus
     double sigma = 3.2;      // error standard deviation
     u64 relin_base = 16;     // decomposition base T for relinearisation v1
@@ -57,8 +59,9 @@ params generate_params(std::size_t n, unsigned log_q, u64 t, rng& source);
 
 namespace presets {
 
-// Verified parameter sets. The relinearisation modulus is chosen so that
-// p * q stays below 2^62.
+// Verified parameter sets. Larger q buys noise budget, so with t = 16 the
+// number of multiplications each one supports is 0, 1 and 2 respectively.
+// Run the noise_growth example to reproduce those figures.
 params n1024_logq27();
 params n2048_logq37();
 params n4096_logq54();

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/basic_demo.dir/basic_demo.cpp.o -o basic_demo  ../libbfv.a 

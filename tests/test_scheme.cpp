@@ -85,11 +85,13 @@ int main() {
         check(ctx.ring().equal(gen_a.generate_secret_key().s, gen_b.generate_secret_key().s));
     }
 
-    // a wrong key must not decrypt
+    // a wrong key must not decrypt; the recovered plaintext is noise, so
+    // compare the polynomials rather than decoding them
     {
         const secret_key other = generator.generate_secret_key();
         const decryptor wrong(ctx, other);
-        check(encoder.decode(wrong.decrypt(cx)) != x);
+        check(wrong.decrypt(cx).coeffs != dec.decrypt(cx).coeffs);
+        check_eq(wrong.noise_budget(cx), 0);
     }
 
     return report("scheme");

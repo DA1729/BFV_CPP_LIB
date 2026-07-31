@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/test_params.dir/test_params.cpp.o -o test_params  ../libbfv.a 

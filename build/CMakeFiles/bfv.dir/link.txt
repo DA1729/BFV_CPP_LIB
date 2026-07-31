@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbfv.a CMakeFiles/bfv.dir/src/mod_arith.cpp.o CMakeFiles/bfv.dir/src/rng.cpp.o CMakeFiles/bfv.dir/src/prime.cpp.o CMakeFiles/bfv.dir/src/ntt.cpp.o CMakeFiles/bfv.dir/src/params.cpp.o CMakeFiles/bfv.dir/src/poly.cpp.o CMakeFiles/bfv.dir/src/context.cpp.o CMakeFiles/bfv.dir/src/keys.cpp.o CMakeFiles/bfv.dir/src/encoder.cpp.o CMakeFiles/bfv.dir/src/encryptor.cpp.o CMakeFiles/bfv.dir/src/decryptor.cpp.o CMakeFiles/bfv.dir/src/evaluator.cpp.o
+/usr/bin/ranlib libbfv.a
