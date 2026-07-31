@@ -29,10 +29,10 @@ int main() {
     check_eq(reduce(i64(-1), 7), u64(6));
     check_eq(reduce(i64(-8), 7), u64(6));
 
-    check_eq(round_div(i128(7), i128(2)), i128(4));
-    check_eq(round_div(i128(-7), i128(2)), i128(-4));
-    check_eq(round_div(i128(5), i128(3)), i128(2));
-    check_eq(round_div(i128(-5), i128(3)), i128(-2));
+    check_eq(static_cast<i64>(round_div(i128(7), i128(2))), i64(4));
+    check_eq(static_cast<i64>(round_div(i128(-7), i128(2))), i64(-4));
+    check_eq(static_cast<i64>(round_div(i128(5), i128(3))), i64(2));
+    check_eq(static_cast<i64>(round_div(i128(-5), i128(3))), i64(-2));
 
     check_eq(bit_reverse(1, 3), u64(4));
     check_eq(bit_reverse(3, 3), u64(6));

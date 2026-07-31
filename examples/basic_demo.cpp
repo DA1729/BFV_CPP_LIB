@@ -17,7 +17,7 @@ int main() {
     rng source;
     std::cout << "seed " << source.seed() << "\n\n";
 
-    const context ctx(presets::n1024_logq27());
+    const context ctx(presets::n2048_logq37());
     std::cout << ctx.parameters().to_string() << "\n\n";
 
     key_generator generator(ctx, source);

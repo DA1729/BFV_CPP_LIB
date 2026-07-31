@@ -1,6 +1,6 @@
-test_mod_arith 3 0.00067892
-test_poly 3 0.00893214
-test_params 3 0.000776096
-test_encoder 3 0.00129658
-test_scheme 1 0.0523279
+test_mod_arith 4 0.000544444
+test_poly 4 0.00678672
+test_params 4 0.000476324
+test_encoder 4 0.000903685
+test_scheme 2 0.0262767
 ---

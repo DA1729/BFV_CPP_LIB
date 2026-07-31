@@ -199,6 +199,20 @@ noise_growth/fast:
 	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/noise_growth.dir/build.make examples/CMakeFiles/noise_growth.dir/build
 .PHONY : noise_growth/fast
 
+# Convenience name for target.
+examples/CMakeFiles/benchmark.dir/rule:
+	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/benchmark.dir/rule
+.PHONY : examples/CMakeFiles/benchmark.dir/rule
+
+# Convenience name for target.
+benchmark: examples/CMakeFiles/benchmark.dir/rule
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
 basic_demo.o: basic_demo.cpp.o
 .PHONY : basic_demo.o
 
@@ -222,6 +236,30 @@ basic_demo.s: basic_demo.cpp.s
 basic_demo.cpp.s:
 	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_demo.dir/build.make examples/CMakeFiles/basic_demo.dir/basic_demo.cpp.s
 .PHONY : basic_demo.cpp.s
+
+benchmark.o: benchmark.cpp.o
+.PHONY : benchmark.o
+
+# target to build an object file
+benchmark.cpp.o:
+	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/benchmark.cpp.o
+.PHONY : benchmark.cpp.o
+
+benchmark.i: benchmark.cpp.i
+.PHONY : benchmark.i
+
+# target to preprocess a source file
+benchmark.cpp.i:
+	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/benchmark.cpp.i
+.PHONY : benchmark.cpp.i
+
+benchmark.s: benchmark.cpp.s
+.PHONY : benchmark.s
+
+# target to generate assembly for a file
+benchmark.cpp.s:
+	cd /home/vincent/Projects/BFV_CPP_LIB/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/benchmark.cpp.s
+.PHONY : benchmark.cpp.s
 
 noise_growth.o: noise_growth.cpp.o
 .PHONY : noise_growth.o
@@ -261,10 +299,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... basic_demo"
+	@echo "... benchmark"
 	@echo "... noise_growth"
 	@echo "... basic_demo.o"
 	@echo "... basic_demo.i"
 	@echo "... basic_demo.s"
+	@echo "... benchmark.o"
+	@echo "... benchmark.i"
+	@echo "... benchmark.s"
 	@echo "... noise_growth.o"
 	@echo "... noise_growth.i"
 	@echo "... noise_growth.s"

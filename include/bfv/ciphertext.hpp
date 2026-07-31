@@ -15,7 +15,7 @@ struct ciphertext {
     std::vector<poly> parts;
 
     ciphertext() = default;
-    explicit ciphertext(std::vector<poly> parts) : parts(std::move(parts)) {}
+    explicit ciphertext(std::vector<poly> components) : parts(std::move(components)) {}
 
     std::size_t size() const { return parts.size(); }
 

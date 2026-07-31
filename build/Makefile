@@ -275,6 +275,19 @@ noise_growth/fast:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/noise_growth.dir/build.make examples/CMakeFiles/noise_growth.dir/build
 .PHONY : noise_growth/fast
 
+#=============================================================================
+# Target rules for targets named benchmark
+
+# Build rule for target.
+benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark
+.PHONY : benchmark
+
+# fast build rule for target.
+benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/build
+.PHONY : benchmark/fast
+
 src/context.o: src/context.cpp.o
 .PHONY : src/context.o
 
@@ -577,6 +590,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... basic_demo"
+	@echo "... benchmark"
 	@echo "... bfv"
 	@echo "... noise_growth"
 	@echo "... test_encoder"

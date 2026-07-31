@@ -85,6 +85,7 @@ clean: examples/clean
 # Recursive "all" directory target.
 examples/all: examples/CMakeFiles/basic_demo.dir/all
 examples/all: examples/CMakeFiles/noise_growth.dir/all
+examples/all: examples/CMakeFiles/benchmark.dir/all
 .PHONY : examples/all
 
 # Recursive "preinstall" directory target.
@@ -94,6 +95,7 @@ examples/preinstall:
 # Recursive "clean" directory target.
 examples/clean: examples/CMakeFiles/basic_demo.dir/clean
 examples/clean: examples/CMakeFiles/noise_growth.dir/clean
+examples/clean: examples/CMakeFiles/benchmark.dir/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -126,7 +128,7 @@ tests/clean: tests/CMakeFiles/test_scheme.dir/clean
 CMakeFiles/bfv.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bfv.dir/build.make CMakeFiles/bfv.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bfv.dir/build.make CMakeFiles/bfv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target bfv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target bfv"
 .PHONY : CMakeFiles/bfv.dir/all
 
 # Build rule for subdir invocation for target.
@@ -152,7 +154,7 @@ CMakeFiles/bfv.dir/clean:
 tests/CMakeFiles/test_mod_arith.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mod_arith.dir/build.make tests/CMakeFiles/test_mod_arith.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_mod_arith.dir/build.make tests/CMakeFiles/test_mod_arith.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=20,21 "Built target test_mod_arith"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=22,23 "Built target test_mod_arith"
 .PHONY : tests/CMakeFiles/test_mod_arith.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,7 +180,7 @@ tests/CMakeFiles/test_mod_arith.dir/clean:
 tests/CMakeFiles/test_poly.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_poly.dir/build.make tests/CMakeFiles/test_poly.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_poly.dir/build.make tests/CMakeFiles/test_poly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=24,25 "Built target test_poly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=26,27 "Built target test_poly"
 .PHONY : tests/CMakeFiles/test_poly.dir/all
 
 # Build rule for subdir invocation for target.
@@ -204,7 +206,7 @@ tests/CMakeFiles/test_poly.dir/clean:
 tests/CMakeFiles/test_params.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_params.dir/build.make tests/CMakeFiles/test_params.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_params.dir/build.make tests/CMakeFiles/test_params.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=22,23 "Built target test_params"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=24,25 "Built target test_params"
 .PHONY : tests/CMakeFiles/test_params.dir/all
 
 # Build rule for subdir invocation for target.
@@ -230,7 +232,7 @@ tests/CMakeFiles/test_params.dir/clean:
 tests/CMakeFiles/test_encoder.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_encoder.dir/build.make tests/CMakeFiles/test_encoder.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_encoder.dir/build.make tests/CMakeFiles/test_encoder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=18,19 "Built target test_encoder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=20,21 "Built target test_encoder"
 .PHONY : tests/CMakeFiles/test_encoder.dir/all
 
 # Build rule for subdir invocation for target.
@@ -256,7 +258,7 @@ tests/CMakeFiles/test_encoder.dir/clean:
 tests/CMakeFiles/test_scheme.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scheme.dir/build.make tests/CMakeFiles/test_scheme.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_scheme.dir/build.make tests/CMakeFiles/test_scheme.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=26,27 "Built target test_scheme"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=28,29 "Built target test_scheme"
 .PHONY : tests/CMakeFiles/test_scheme.dir/all
 
 # Build rule for subdir invocation for target.
@@ -308,7 +310,7 @@ examples/CMakeFiles/basic_demo.dir/clean:
 examples/CMakeFiles/noise_growth.dir/all: CMakeFiles/bfv.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/noise_growth.dir/build.make examples/CMakeFiles/noise_growth.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/noise_growth.dir/build.make examples/CMakeFiles/noise_growth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=16,17 "Built target noise_growth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=18,19 "Built target noise_growth"
 .PHONY : examples/CMakeFiles/noise_growth.dir/all
 
 # Build rule for subdir invocation for target.
@@ -326,6 +328,32 @@ noise_growth: examples/CMakeFiles/noise_growth.dir/rule
 examples/CMakeFiles/noise_growth.dir/clean:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/noise_growth.dir/build.make examples/CMakeFiles/noise_growth.dir/clean
 .PHONY : examples/CMakeFiles/noise_growth.dir/clean
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/benchmark.dir
+
+# All Build rule for target.
+examples/CMakeFiles/benchmark.dir/all: CMakeFiles/bfv.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles --progress-num=3,4 "Built target benchmark"
+.PHONY : examples/CMakeFiles/benchmark.dir/all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/benchmark.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/benchmark.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vincent/Projects/BFV_CPP_LIB/build/CMakeFiles 0
+.PHONY : examples/CMakeFiles/benchmark.dir/rule
+
+# Convenience name for target.
+benchmark: examples/CMakeFiles/benchmark.dir/rule
+.PHONY : benchmark
+
+# clean rule for target.
+examples/CMakeFiles/benchmark.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/benchmark.dir/build.make examples/CMakeFiles/benchmark.dir/clean
+.PHONY : examples/CMakeFiles/benchmark.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

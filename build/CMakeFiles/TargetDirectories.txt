@@ -20,6 +20,7 @@
 /home/vincent/Projects/BFV_CPP_LIB/build/tests/CMakeFiles/install/strip.dir
 /home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/basic_demo.dir
 /home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/noise_growth.dir
+/home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/benchmark.dir
 /home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/test.dir
 /home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/edit_cache.dir
 /home/vincent/Projects/BFV_CPP_LIB/build/examples/CMakeFiles/rebuild_cache.dir
